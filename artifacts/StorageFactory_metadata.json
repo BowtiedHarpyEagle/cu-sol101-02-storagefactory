@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -13,8 +13,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "simpleStorage",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfSimpleStorageContracts",
 				"outputs": [
 					{
 						"internalType": "contract SimpleStorage",
@@ -23,6 +29,43 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "sfGet",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newSimpleStorageNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "sfStore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -41,7 +84,7 @@
 		"compilationTarget": {
 			"StorageFactory.sol": "StorageFactory"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -62,11 +105,11 @@
 			]
 		},
 		"StorageFactory.sol": {
-			"keccak256": "0xaf6dbf9cad97a4fac5fef0d437fa0ccde90f51ff5b7c95ae75ae3c413c7d1654",
+			"keccak256": "0x1cc4a5f86a873634701c7f02de29da845ac63386236ffbeea81a84beaf7477eb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://763752e37f2eee4fd354caea2d01a21ce5cfd72e12a79f47a377d33f9341c932",
-				"dweb:/ipfs/QmUiegB1DwydPY92CyF3fXTD2bwBzVTRNjFopZ39459QRp"
+				"bzz-raw://53d7f244fa9bcc71d3d74c0b2ce6aad364e9d3e52929b80852a4a4de65a272dd",
+				"dweb:/ipfs/QmbNGPNJH6qQwYt3k4jn4SvY5HTY5SqEdxSvTUaQKrJvGi"
 			]
 		}
 	},
